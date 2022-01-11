@@ -16,13 +16,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.starter-form {
-  display: flex;
-  border: 4px solid gold;
-  width: 100%;
-  padding: 10px;
-}
-
 .App {
   display: flex;
   flex-direction: column;

@@ -1,5 +1,6 @@
 import { FaTrashAlt } from "react-icons/fa";
 const TableData = ({ sem, year, course, semCourse, handleDelete }) => {
+  console.log(course);
   return (
     <tr>
       <td>{semCourse}</td>

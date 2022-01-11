@@ -18,7 +18,7 @@ const AddCourse = ({
   const [idNum, setIdNum] = useState("");
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [credHours, setCredHours] = useState("");
+  const [credHours, setCredHours] = useState(1);
 
   const handleClick = (e) => {
     console.log("submitted");
