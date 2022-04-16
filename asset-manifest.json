@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ff4be58.css",
-    "main.js": "/static/js/main.6a89f6ef.js",
-    "index.html": "/index.html",
-    "main.4ff4be58.css.map": "/static/css/main.4ff4be58.css.map",
-    "main.6a89f6ef.js.map": "/static/js/main.6a89f6ef.js.map"
+    "main.css": "/four-year-planner-v2/static/css/main.4ff4be58.css",
+    "main.js": "/four-year-planner-v2/static/js/main.6a89f6ef.js",
+    "index.html": "/four-year-planner-v2/index.html",
+    "main.4ff4be58.css.map": "/four-year-planner-v2/static/css/main.4ff4be58.css.map",
+    "main.6a89f6ef.js.map": "/four-year-planner-v2/static/js/main.6a89f6ef.js.map"
   },
   "entrypoints": [
     "static/css/main.4ff4be58.css",
