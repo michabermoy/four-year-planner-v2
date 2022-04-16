@@ -2,7 +2,7 @@
   "name": "fypv2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://michabermoy.github.io",
+  "homepage": "https://michabermoy.github.io/four-year-planner-v2",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.1",
