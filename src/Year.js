@@ -11,7 +11,7 @@ const Year = ({ courses, years, handleDelete, handleSubmit, year }) => {
             courses={courses}
             year={year}
             sem="Fall"
-            semCourses={years[year].Fall}
+            semCourses={years.get(year).Fall}
             handleDelete={handleDelete}
             handleSubmit={handleSubmit}
           />
@@ -22,7 +22,7 @@ const Year = ({ courses, years, handleDelete, handleSubmit, year }) => {
             courses={courses}
             year={year}
             sem="Spring"
-            semCourses={years[year].Spring}
+            semCourses={years.get(year).Spring}
             handleDelete={handleDelete}
             handleSubmit={handleSubmit}
           />

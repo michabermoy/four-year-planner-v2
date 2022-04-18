@@ -1,9 +1,20 @@
 import { FaGripLines } from "react-icons/fa";
 import "./StarterForm.css";
-const StarterForm = ({ handleAddYear, years, courses, setCourses }) => {
+const StarterForm = ({
+  handleAddYear,
+  years,
+  courses,
+  setCourses,
+  standing,
+  setStanding,
+}) => {
   let courseDB = {};
   let fileReader;
 
+  /**
+   * stores all of the courses listed in file submitted as an object
+   * @param {*} e event listener
+   */
   const handleFileRead = (e) => {
     const content = fileReader.result.split(/\r\n|\n/);
     // console.log(content);
@@ -46,6 +57,11 @@ const StarterForm = ({ handleAddYear, years, courses, setCourses }) => {
     console.log(courseDB);
     setCourses(courseDB);
   };
+
+  /**
+   * Reads the file submitted
+   * @param {*} file file submited
+   */
   const handleFileChosen = (file) => {
     fileReader = new FileReader();
     fileReader.onload = handleFileRead;
@@ -57,7 +73,13 @@ const StarterForm = ({ handleAddYear, years, courses, setCourses }) => {
       <form>
         <div>
           <label htmlFor="current standing">Current Standing: </label>
-          <select name="current standing" id="cur-standing">
+          <select
+            name="current standing"
+            id="cur-standing"
+            onClick={(e) => {
+              setStanding(e.target.value);
+            }}
+          >
             <option value="freshman">freshman</option>
             <option value="sophomore">sophomore</option>
             <option value="junior">junior</option>

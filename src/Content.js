@@ -3,9 +3,9 @@ import Year from "./Year";
 const Content = ({ courses, years, handleDelete, handleSubmit }) => {
   return (
     <main>
-      {Object.entries(years).map(([year, val], i) => (
+      {Array.from(years).map(([year, val]) => (
         <Year
-          key={i}
+          key={year % new Date().getFullYear()}
           courses={courses}
           years={years}
           handleDelete={handleDelete}
